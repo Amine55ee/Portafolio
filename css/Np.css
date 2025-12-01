@@ -280,7 +280,7 @@ hr {
 /* === ACCESO === */
 .contenido-con-fondo {
   background: url("multimedia/apertura.jpeg") center/cover no-repeat;
-  min-height: 100vh;
+  margin-top: 50px;
 }
 
 .acceso,
