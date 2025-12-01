@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | GPS Vehículos</title>
+  <link rel="stylesheet" href="css/Np.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">NEW PROJECT</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li><a href="servicios.html">Servícios</a></li>
+        <li class="submenu">
+          <a href="#">Red Profesional ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">Distribuidores Autorizados</a></li>
+            <li><a href="#">Talleres Autorizados</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+        <li><a href="acceso.html">Acceso</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="headerGeneral">
+    <h1>Contáctanos</h1>
+    <p>Estamos aquí para ayudarte. Ponte en contacto con nosotros hoy mismo.</p>
+  </header>
+  
+  <main>
+    <section class="acceso">
+      <h2>Formulario de Contacto</h2>
+      <p>
+      Puedes rellenar el formulario con tu duda o consulta y te responderemos a la mayor brevedad posible</p>
+      <form id="contacto">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono">
+
+        <label for="empresa">Empresa</label>
+        <input type="text" id="empresa" name="empresa">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5"
+          style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;" required></textarea>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto" style="margin: 0;">Acepto la política de privacidad</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div id="footer">
+      <div class="footer-col">
+        <h3>Control y Seguimiento Gonor</h3>
+        <p><strong>Plataforma y App Premium más completa y Avanzada de Geolocalización</strong>, para monitorizar y
+          gestionar en tiempo real cualquier dispositivo GPS ubicado en los perfiles anteriormente mencionados.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Sobre Nosotros</h3>
+        <p>Comprometidos con la excelencia y la innovación continua. Nuestro equipo de profesionales altamente
+          cualificados trabaja para asegurar que nuestras soluciones no solo cumplan, sino que superen las expectativas
+          de nuestros clientes.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Información de Contacto</h3>
+        <p>Puedes encontrarnos también a través de los siguientes datos:</p>
+        <ul>
+          <li>📍 C. Joaquín Chapaprieta, 51, 03181 Torrevieja, Alicante</li>
+          <li>📞 (+34) 918 260 099</li>
+          <li>📱 (+34) 633 233 573</li>
+          <li>✉️ <a href="mailto:info@gonor.es">info@gonor.es</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2024 Derechos reservados
+      <a href="avisoLegal.html">Aviso Legal</a> |
+      <a href="politicaPrivacidad.html">Política de Privacidad</a> |
+      <a href="accesibilidad.html">Accesibilidad</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

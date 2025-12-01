@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="css/Np.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">NEW PROJECT</div>
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre.html">Sobre Nosotros</a></li>
+            <li><a href="servicios.html">Servícios</a></li>
+            <li class="submenu">
+              <a href="#">Red Profesional ▾</a>
+              <ul class="dropdown">
+                <li><a href="#">Distribuidores Autorizados</a></li>
+                <li><a href="#">Talleres Autorizados</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+            <li><a href="acceso.html">Acceso</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <header class="headerGeneral">
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones avanzadas de geolocalización y control para múltiples aplicaciones.</p>
+    </header>
+
+    <!-- Sección 1 -->
+    <section class="contenidoNp1">
+        <div class="textoNp1">
+            <h2>Sistema de Control de Flotas</h2>
+            <hr>
+            <p>
+                GONOR ofrece una plataforma y aplicación premium de geolocalización para el control integral de flotas y
+                dispositivos GPS. Esta solución avanzada permite la monitorización y gestión en tiempo real de una
+                amplia gama de vehículos y equipos.
+                <br><br>
+                <strong>Control de Flotas:</strong> La plataforma especializada en flotas de camiones incluye funciones
+                como asignación de rutas, control de
+                velocidad, monitoreo de paradas, presión de neumáticos, tiempo de conducción, temperatura del remolque y
+                seguimiento del uso de la puerta del remolque. También incorpora control de combustible con sistema
+                antirrobo, sirena acústica de alta ganancia, comunicación remota de alertas y descarga de datos del
+                tacógrafo.
+            </p>
+        </div>
+        <div class="imagenNp1">
+            <img src="multimedia/servicios1.png" alt="Sistema de Control de Flotas" />
+        </div>
+    </section>
+
+    <!-- Sección 2 -->
+    <section class="contenidoNp1">
+        <div class="imagenS1">
+            <div class="sliderNp1" data-slider="seguridad">
+                <img src="multimedia/servicios2.jpg" class="slideNp1 active" alt="Grabación y Seguridad 1">
+                <img src="multimedia/servicios3.jpg" class="slideNp1" alt="Grabación y Seguridad 2">
+                <button class="arrowNp1 left" onclick="changeSlide('seguridad', -1)">&#10094;</button>
+                <button class="arrowNp1 right" onclick="changeSlide('seguridad', 1)">&#10095;</button>
+                <div class="dotsNp1">
+                    <span class="dotNp1 active" onclick="goToSlide('seguridad', 0)"></span>
+                    <span class="dotNp1" onclick="goToSlide('seguridad', 1)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="textoNp1">
+            <h2>Grabación y Seguridad</h2>
+            <hr>
+            <p>
+                <strong>Tecnología de Seguridad:</strong> GONOR integra tecnología de vanguardia para la seguridad,
+                incluyendo un
+                alcoholímetro homologado con biometría y una electrocerradura para prevenir robos, ambas controladas
+                remotamente.
+                <br><br>
+                <strong>Grabadores Embarcados y Cámaras IA:</strong> Los sistemas incluyen grabadores tipo caja negra y
+                cámaras con
+                inteligencia artificial para registrar voz y vídeo, proporcionando una vigilancia completa del vehículo
+                y su entorno.
+                <br><br>
+                <strong></strong>Vehículos Ligeros y Motos:</strong> La plataforma también gestiona furgonetas, coches y
+                motos, con seguimiento de
+                trayectos, control de velocidad, alertas de robo y accidentes, con funciones de bloqueo remoto.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección 3 -->
+    <section class="contenidoNp1">
+        <div class="textoNp1">
+            <h2>Dispositivos Autónomos</h2>
+            <hr>
+            <p>
+                <strong>Contenedores y Equipos Sin Autonomía:</strong> Para dispositivos sin autonomía propia, GONOR
+                ofrece GPS autónomos
+                de larga duración.
+                <br><br>
+                <strong>Gestión de Equipos de Manutención:</strong> Incluye el control de carga de batería para
+                carretillas elevadoras,
+                uso y mantenimiento de tractores, y seguimiento del tiempo de trabajo.
+                <br><br>
+                <strong>Informes y Control de Presencia:</strong> La plataforma genera informes detallados del trabajo
+                realizado por
+                maquinaria pesada y permite el control de presencia en campo abierto a través de GPS y aplicación móvil.
+            </p>
+            <a href="contacto.html" class="botonNp1">Solicitar</a>
+        </div>
+        <div class="imagenNp1">
+            <img src="multimedia/servicios4.jpg" class="sombraNp1" alt="Dispositivos Autónomos" />
+        </div>
+    </section>
+
+    <!-- Sección 4 -->
+    <section class="contenidoNp1">
+        <div class="imagenS1">
+            <div class="multi-sliderNp1" id="multiSlider">
+                <div class="multi-slide active">
+                    <img src="multimedia/servicios5.jpg" alt="Uso 1">
+                    <img src="multimedia/servicios6.jpg" alt="Uso 2">
+                    <img src="multimedia/servicios7.jpg" alt="Uso 3">
+                </div>
+                <div class="multi-slide">
+                    <img src="multimedia/servicios8.jpg" alt="Uso 4">
+                    <img src="multimedia/servicios9.jpg" alt="Uso 5">
+                    <img src="multimedia/servicios10.jpg" alt="Uso 6">
+                </div>
+                <div class="multi-slide">
+                    <img src="multimedia/servicios11.jpg" alt="Uso 7">
+                    <img src="multimedia/servicios12.jpg" alt="Uso 8">
+                    <img src="multimedia/servicios13.jpg" alt="Uso 9">
+                </div>
+                <div class="multi-slide">
+                    <img src="multimedia/servicios14.jpg" alt="Uso 10">
+                    <img src="multimedia/servicios15.jpg" alt="Uso 11">
+                    <img src="multimedia/servicios16.jpg" alt="Uso 12">
+                </div>
+                <button class="arrowNp1 left" onclick="changeMultiSlide(-1)">&#10094;</button>
+                <button class="arrowNp1 right" onclick="changeMultiSlide(1)">&#10095;</button>
+            </div>
+            <div class="dotsNp1" id="multiDots">
+                <span class="dotNp1" onclick="showMultiSlide(0)"></span>
+                <span class="dotNp1" onclick="showMultiSlide(1)"></span>
+                <span class="dotNp1" onclick="showMultiSlide(2)"></span>
+                <span class="dotNp1" onclick="showMultiSlide(3)"></span>
+            </div>
+        </div>
+        <div class="textoNp1">
+            <h2>Otras Aplicaciones y Usos</h2>
+            <hr>
+            <p>
+                <strong>Personas y Mascotas:</strong> También proporciona seguimiento de trayectos y comportamiento, con
+                alertas de
+                seguridad para personas y mascotas.
+                <br><br>
+                <strong>Control Remoto de Instalaciones:</strong> Finalmente, GONOR facilita el control remoto de grupos
+                electrógenos y
+                otras instalaciones eléctricas, así como la gestión de dispositivos móviles para personal profesional.
+
+
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer">
+            <div class="footer-col">
+                <h3>Control y Seguimiento Gonor</h3>
+                <p><strong>Plataforma y App Premium más completa y Avanzada de Geolocalización</strong>, para
+                    monitorizar y gestionar en tiempo real cualquier dispositivo GPS ubicado en los perfiles
+                    anteriormente mencionados.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Sobre Nosotros</h3>
+                <p>Comprometidos con la excelencia y la innovación continua. Nuestro equipo de profesionales altamente
+                    cualificados trabaja para asegurar que nuestras soluciones no solo cumplan, sino que superen las
+                    expectativas de nuestros clientes.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Información de Contacto</h3>
+                <p>Puedes encontrarnos también a través de los siguientes datos:</p>
+                <ul>
+                    <li>📍 C. Joaquín Chapaprieta, 51, 03181 Torrevieja, Alicante</li>
+                    <li>📞 (+34) 918 260 099</li>
+                    <li>📱 (+34) 633 233 573</li>
+                    <li>✉️ <a href="mailto:info@gonor.es">info@gonor.es</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Derechos reservados |
+            <a href="avisoLegal.html">Aviso Legal</a> |
+            <a href="politicaPrivacidad.html">Política de Privacidad</a> |
+            <a href="accesibilidad.html">Accesibilidad</a>
+        </div>
+    </footer>
+
+    <script>
+        const sliders = {};
+        function initSlider(name) {
+            const container = document.querySelector(`.sliderNp1[data-slider="${name}"]`);
+            if (!container) return;
+            sliders[name] = {
+                index: 0,
+                slides: container.querySelectorAll('.slideNp1'),
+                dots: container.querySelectorAll('.dotNp1')
+            };
+            showSlide(name, 0);
+        }
+        function showSlide(name, i) {
+            const s = sliders[name];
+            if (!s) return;
+            if (i >= s.slides.length) i = 0;
+            if (i < 0) i = s.slides.length - 1;
+            s.index = i;
+            s.slides.forEach(slide => slide.classList.remove('active'));
+            s.dots.forEach(dot => dot.classList.remove('active'));
+            s.slides[i].classList.add('active');
+            s.dots[i].classList.add('active');
+        }
+        function changeSlide(name, direction) {
+            const s = sliders[name];
+            if (!s) return;
+            showSlide(name, s.index + direction);
+        }
+        function goToSlide(name, i) {
+            showSlide(name, i);
+        }
+        initSlider('seguridad');
+    </script>
+
+    <script>
+        let multiSlideIndex = 0;
+        const multiSlides = document.querySelectorAll('.multi-slide');
+        const multiDots = document.querySelectorAll('#multiDots .dotNp1');
+
+        function showMultiSlide(index) {
+            if (index >= multiSlides.length) index = 0;
+            if (index < 0) index = multiSlides.length - 1;
+            multiSlideIndex = index;
+
+            multiSlides.forEach(slide => slide.classList.remove('active'));
+            multiSlides[index].classList.add('active');
+
+            multiDots.forEach(dot => dot.classList.remove('active'));
+            if (multiDots[index]) {
+                multiDots[index].classList.add('active');
+            }
+        }
+
+        function changeMultiSlide(direction) {
+            showMultiSlide(multiSlideIndex + direction);
+        }
+
+        multiDots.forEach((dot, i) => {
+            dot.addEventListener('click', () => showMultiSlide(i));
+        });
+
+        setInterval(() => {
+            changeMultiSlide(1);
+        }, 3000);
+
+        showMultiSlide(0);
+    </script>
+    <script>
+        function animarAparicion() {
+            document.querySelectorAll('.contenidoNp1').forEach(section => {
+                const texto = section.querySelector('.textoNp1');
+                let imagen = section.querySelector('.imagenNp1');
+                if (!imagen) imagen = section.querySelector('.imagenS1');
+                if (texto && !texto.classList.contains('anim-visible')) {
+                    const textoRect = texto.getBoundingClientRect();
+                    const pantalla = window.innerHeight || document.documentElement.clientHeight;
+                    if (textoRect.top < pantalla && textoRect.bottom > 0) {
+                        texto.classList.add('anim-visible');
+                        if (imagen) imagen.classList.add('anim-visible');
+                    }
+                }
+            });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.contenidoNp1').forEach(section => {
+                const texto = section.querySelector('.textoNp1');
+                let imagen = section.querySelector('.imagenNp1');
+                if (!imagen) imagen = section.querySelector('.imagenS1');
+                if (texto) texto.classList.add('anim-oculto-izq');
+                if (imagen) imagen.classList.add('anim-oculto-der');
+            });
+            animarAparicion();
+            window.addEventListener('scroll', animarAparicion);
+        });
+    </script>
+
+</body>
+
+</html>

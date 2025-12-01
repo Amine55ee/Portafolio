@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre NewProject</title>
+  <link rel="stylesheet" href="css/Np.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">NEW PROJECT</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li><a href="servicios.html">Servícios</a></li>
+        <li class="submenu">
+          <a href="#">Red Profesional ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">Distribuidores Autorizados</a></li>
+            <li><a href="#">Talleres Autorizados</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+        <li><a href="acceso.html">Acceso</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="headerNp">
+    <video autoplay muted loop playsinline class="video-fondo">
+      <source src="multimedia/sobrenosotros.mp4" type="video/mp4">
+      Tu navegador no soporta el video HTML5.
+    </video>
+  </header>
+
+  <section class="contenidoNp1">
+    <div class="textoNp1">
+      <h2>Control y Seguimiento</h2>
+      <hr>
+      <p>
+        En GONOR, nos especializamos en proporcionar soluciones avanzadas y completas para el control y la gestión de
+        flotas y dispositivos GPS.
+        Nuestra misión es ofrecer a las empresas una plataforma y aplicación premium de geolocalización que no solo
+        mejora la eficiencia operativa,
+        sino que también eleva los estándares de seguridad y supervisión en tiempo real.
+      </p>
+    </div>
+    <div class="imagenNp1">
+      <img src="multimedia/sobre1.jpg" alt="Vehículos controlados por GPS">
+    </div>
+  </section>
+
+  <section class="contenidoNp1">
+    <div class="imagenNp1">
+      <img src="multimedia/sobre2.png" class="sombraNp1" alt="Persona usando una tablet">
+    </div>
+    <div class="textoNp1">
+      <h2>Innovación, Compromiso y Visión</h2>
+      <hr>
+      <p>
+        <strong>Innovación y Seguridad:</strong> Nos distinguimos por integrar lo último en tecnología para la
+        seguridad, incluyendo alcoholímetros homologados con biometría y electrocerraduras avanzadas. Además,
+        incorporamos sistemas de grabación tipo caja negra y cámaras con inteligencia artificial para una vigilancia
+        exhaustiva.
+        <br><br>
+        <strong>Compromiso con la Excelencia:</strong> En GONOR, estamos comprometidos con la excelencia y la innovación
+        continua. Nuestro equipo de profesionales altamente cualificados trabaja incansablemente para asegurar que
+        nuestras soluciones no solo cumplan, sino que superen las expectativas de nuestros clientes.
+        <br><br>
+        <strong>Enfoque en el Cliente:</strong> Entendemos que cada cliente tiene necesidades únicas. Por ello,
+        ofrecemos soluciones personalizadas y un soporte dedicado para garantizar que cada implementación sea exitosa y
+        aporte valor significativo a su negocio.
+        <br><br>
+        <strong>Visión de Futuro:</strong> Miramos hacia el futuro, anticipando las necesidades emergentes del mercado y
+        desarrollando soluciones que no solo resuelvan los desafíos actuales, sino que también preparen a nuestros
+        clientes para el mañana.
+      </p>
+    </div>
+  </section>
+
+  </main>
+  <footer>
+    <div id="footer">
+      <div class="footer-col">
+        <h3>Control y Seguimiento Gonor</h3>
+        <p><strong>Plataforma y App Premium más completa y Avanzada de Geolocalización</strong>, para monitorizar y
+          gestionar en tiempo real cualquier dispositivo GPS ubicado en los perfiles anteriormente mencionados.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Sobre Nosotros</h3>
+        <p>Comprometidos con la excelencia y la innovación continua. Nuestro equipo de profesionales altamente
+          cualificados trabaja para asegurar que nuestras soluciones no solo cumplan, sino que superen las expectativas
+          de nuestros clientes.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Información de Contacto</h3>
+        <p>Puedes encontrarnos también a través de los siguientes datos:</p>
+        <ul>
+          <li>📍 C. Joaquín Chapaprieta, 51, 03181 Torrevieja, Alicante</li>
+          <li>📞 (+34) 918 260 099</li>
+          <li>📱 (+34) 633 233 573</li>
+          <li>✉️ <a href="mailto:info@gonor.es">info@gonor.es</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2024 Derechos reservados
+      <a href="avisoLegal.html">Aviso Legal</a> |
+      <a href="politicaPrivacidad.html">Política de Privacidad</a> |
+      <a href="accesibilidad.html">Accesibilidad</a>
+    </div>
+  </footer>
+  <script>
+    function animarAparicion() {
+      document.querySelectorAll('.contenidoNp1').forEach(section => {
+        const texto = section.querySelector('.textoNp1');
+        const imagen = section.querySelector('.imagenNp1');
+
+        if (texto && !texto.classList.contains('anim-visible')) {
+          const textoRect = texto.getBoundingClientRect();
+          const imagenRect = imagen.getBoundingClientRect();
+          const pantalla = window.innerHeight || document.documentElement.clientHeight;
+
+          if (textoRect.top < pantalla && textoRect.bottom > 0) {
+            texto.classList.add('anim-visible');
+            imagen.classList.add('anim-visible');
+          }
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.contenidoNp1').forEach(section => {
+        const texto = section.querySelector('.textoNp1');
+        const imagen = section.querySelector('.imagenNp1');
+        if (texto) texto.classList.add('anim-oculto-izq');
+        if (imagen) imagen.classList.add('anim-oculto-der');
+      });
+
+      animarAparicion();
+      window.addEventListener('scroll', animarAparicion);
+    });
+  </script>
+</body>
+
+</html>

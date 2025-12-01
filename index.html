@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>New Project</title>
+  <link rel="stylesheet" href="css/Np.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">NEW PROJECT</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li><a href="servicios.html">Servícios</a></li>
+        <li class="submenu">
+          <a href="#">Red Profesional ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">Distribuidores Autorizados</a></li>
+            <li><a href="#">Talleres Autorizados</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+        <li><a href="acceso.html">Acceso</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="headerNp">
+    <video autoplay muted loop playsinline class="video-fondo">
+      <source src="multimedia/inicio.mov" type="video/mp4" />
+      Tu navegador no soporta el video HTML5.
+    </video>
+  </header>
+
+  <section class="contenidoNp1">
+    <div class="textoNp1">
+      <h2>Control de Flotas</h2>
+      <hr/>
+      <p>
+        New Project dispone de la <strong>plataforma y App Premium más completa</strong> y
+        <strong>Avanzada de Geolocalización,</strong> para monitorizar y gestionar en tiempo
+        real cualquier dispositivo GPS.
+      
+      </p>
+    </div>
+    <div class="imagenNp1">
+      <img src="multimedia/control-de-flotas.jpg" class="sombraNp1" alt="Control de Flotas" />
+    </div>
+  </section>
+
+  <section class="contenidoNp1">
+    <div class="imagenNp1">
+      <img src="multimedia/control-de-flotas-1.jpg" class="sombraNp1" alt="Seguridad en Control de Flotas" />
+    </div>
+    <div class="textoNp1">
+      <h2>Seguridad en Control de Flotas</h2>
+      <hr />
+      <p>
+        Contamos con la última tecnología en seguridad, tanto para prevenir
+        accidentes mediante nuestro ALCOHOLIMETRO homologado por la DGT con
+        Certificado Europeo CENELEC EN-50436 con biometría y detección de la
+        persona que está exhalando, así como para la prevención de robos de
+        mercancia en los remolques durante el trayecto o estacionamientos,
+        gracias a nuestra ELECTROCERRADURA también homologada y controlada
+        remotamente, evitando aperturas manuales no autorizadas.
+      </p>
+      <a href="servicios.html" class="botonNp1">Ver todos los usos</a>
+    </div>
+  </section>
+
+  <section class="contenidoNp1">
+    <div class="textoNp1">
+      <h2>Caja Negra en Control de Flotas</h2>
+      <hr />
+      <p>
+        Avanzando un paso más, incorporando en nuestros sistemas los
+        grabadores embarcados (Caja negra) y cámaras de avión con registro de
+        voz para la cabina del vehículo, con varias perspectivas de ángulo
+        visual con inteligencia artificial (Detección de movimientos extraños,
+        somnolencia del conductor o salida del plano visual), pudiendo de este
+        modo obtener la información necesaria en cualquier momento, o si se
+        produce un accidente, a través de video/audio/imagen.
+      </p>
+      <a href="servicios.html" class="botonNp1">Ver todos los usos</a>
+    </div>
+    <div class="imagenNp1">
+      <img src="multimedia/gonor-control-de-flotas-.png" class="sombraNp1" alt="Caja Negra en Control de Flotas" />
+    </div>
+  </section>
+
+  <footer>
+    <div id="footer">
+      <div class="footer-col">
+        <h3>Control y Seguimiento Gonor</h3>
+        <p>
+          <strong>Plataforma y App Premium más completa y Avanzada de
+            Geolocalización</strong>, para monitorizar y gestionar en tiempo real cualquier dispositivo
+          GPS ubicado en los perfiles anteriormente mencionados.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Sobre Nosotros</h3>
+        <p>
+          Comprometidos con la excelencia y la innovación continua. Nuestro
+          equipo de profesionales altamente cualificados trabaja para asegurar
+          que nuestras soluciones no solo cumplan, sino que superen las
+          expectativas de nuestros clientes.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Información de Contacto</h3>
+        <p>Puedes encontrarnos también a través de los siguientes datos:</p>
+        <ul>
+          <li>📍 C. Joaquín Chapaprieta, 51, 03181 Torrevieja, Alicante</li>
+          <li>📞 (+34) 918 260 099</li>
+          <li>📱 (+34) 633 233 573</li>
+          <li>✉️ <a href="mailto:info@gonor.es">info@gonor.es</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2024 Derechos reservados
+      <a href="avisoLegal.html">Aviso Legal</a> |
+      <a href="politicaPrivacidad.html">Política de Privacidad</a> |
+      <a href="accesibilidad.html">Accesibilidad</a>
+    </div>
+  </footer>
+
+  
+  
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+
+      document.getElementById("cookie-popup").style.display = "flex";
+
+      document
+        .getElementById("accept-cookies")
+        .addEventListener("click", () => {
+
+          document.getElementById("cookie-popup").style.display = "none";
+        });
+    });
+  </script>
+  <script>
+    function animarAparicion() {
+      document.querySelectorAll('.contenidoNp1').forEach(section => {
+        const texto = section.querySelector('.textoNp1');
+        const imagen = section.querySelector('.imagenNp1');
+
+        if (texto && !texto.classList.contains('anim-visible')) {
+          const textoRect = texto.getBoundingClientRect();
+          const imagenRect = imagen.getBoundingClientRect();
+          const pantalla = window.innerHeight || document.documentElement.clientHeight;
+
+          if (textoRect.top < pantalla && textoRect.bottom > 0) {
+            texto.classList.add('anim-visible');
+            imagen.classList.add('anim-visible');
+          }
+        }
+      });
+    }
+
+    // Al cargar y al hacer scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      // Estado inicial: oculto
+      document.querySelectorAll('.contenidoNp1').forEach(section => {
+        const texto = section.querySelector('.textoNp1');
+        const imagen = section.querySelector('.imagenNp1');
+        if (texto) texto.classList.add('anim-oculto-izq');
+        if (imagen) imagen.classList.add('anim-oculto-der');
+      });
+
+      animarAparicion();
+      window.addEventListener('scroll', animarAparicion);
+    });
+  </script>
+
+</body>
+
+</html>

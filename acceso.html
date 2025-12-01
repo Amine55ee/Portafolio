@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso</title>
+  <link rel="stylesheet" href="css/Np.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">NEW PROJECT</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li><a href="servicios.html">Servícios</a></li>
+        <li class="submenu">
+          <a href="#">Red Profesional ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">Distribuidores Autorizados</a></li>
+            <li><a href="#">Talleres Autorizados</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+        <li><a href="acceso.html">Acceso</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="contenido-con-fondo">
+    <main>
+      <form id="loginForm" class="form-acceso">
+        <h2>Iniciar Sesión</h2>
+
+        <input type="text" id="usuario" name="usuario" placeholder="Usuario" required />
+
+        <input type="password" id="password" name="password" placeholder="Contraseña" required />
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="mostrarPassword" />
+          <label for="mostrarPassword">Mostrar contraseña</label>
+        </div>
+
+        <button type="supmit" onclick="window.location.href='postacceso.html'">Entrar</button>
+        <p id="mensaje"></p>
+      </form>
+    </main>
+  </div>
+
+  <footer>
+    <div id="footer">
+      <div class="footer-col">
+        <h3>Control y Seguimiento Gonor</h3>
+        <p><strong>Plataforma y App Premium más completa y Avanzada de Geolocalización</strong>, para monitorizar y
+          gestionar en tiempo real cualquier dispositivo GPS ubicado en los perfiles anteriormente mencionados.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Sobre Nosotros</h3>
+        <p>Comprometidos con la excelencia y la innovación continua. Nuestro equipo de profesionales altamente
+          cualificados trabaja para asegurar que nuestras soluciones no solo cumplan, sino que superen las expectativas
+          de nuestros clientes.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Información de Contacto</h3>
+        <p>Puedes encontrarnos también a través de los siguientes datos:</p>
+        <ul>
+          <li>📍 C. Joaquín Chapaprieta, 51, 03181 Torrevieja, Alicante</li>
+          <li>📞 (+34) 918 260 099</li>
+          <li>📱 (+34) 633 233 573</li>
+          <li>✉️ <a href="mailto:info@gonor.es">info@gonor.es</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2024 Derechos reservados
+      <a href="avisoLegal.html">Aviso Legal</a> |
+      <a href="politicaPrivacidad.html">Política de Privacidad</a> |
+      <a href="accesibilidad.html">Accesibilidad</a>
+    </div>
+  </footer>
+</body>
+<script>
+  const form = document.getElementById("loginForm");
+  const mensaje = document.getElementById("mensaje");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const usuario = document.getElementById("usuario").value.trim();
+    const password = document.getElementById("password").value;
+
+    if (usuario === "") {
+      mensaje.style.color = "red";
+      mensaje.textContent = "El campo usuario es obligatorio.";
+      return;
+    }
+
+    if (password.length < 6) {
+      mensaje.style.color = "rgb(155, 18, 18)";
+      mensaje.textContent = "La contraseña debe tener al menos 6 caracteres.";
+      return;
+    }
+
+    mensaje.style.color = "rgb(3, 45, 56)";
+    mensaje.textContent = "Inicio de sesión exitoso (simulado)";
+  });
+
+  const checkbox = document.getElementById("mostrarPassword");
+  const passwordInput = document.getElementById("password");
+
+  checkbox.addEventListener("change", function () {
+    passwordInput.type = this.checked ? "text" : "password";
+  });
+</script>
+
+</html>
